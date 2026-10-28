@@ -47,11 +47,17 @@ export const HomePage: React.FC = () => {
           loop
           muted={isMuted}
           playsInline
-          poster="/images/img_26.jpg"
           className="absolute inset-0 w-full h-full object-cover object-center"
         >
+          <source
+            src="https://res.cloudinary.com/di9eeahdy/video/upload/Generating_luxury_jewellery_film_58a56477_1080p_1_shiqnz.webm"
+            type="video/webm"
+          />
+          <source
+            src="https://res.cloudinary.com/di9eeahdy/video/upload/Generating_luxury_jewellery_film_58a56477_1080p_1_shiqnz.mp4"
+            type="video/mp4"
+          />
           <source src="/videos/hero.webm" type="video/webm" />
-          <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
 
         {/* Ambient Dark Gradient Vignette */}
